@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MOVIE SURVEY FORM</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="title">MOVIE SURVEY FORM</h1>
+        <p id="description">a survey form for cinephiles!</p>
+        <p id="raffle">Your participation in this survey will give you the opportunity to win a movie ticket.</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">NAME:  
+                    <input id="name" type="text" placeholder="First Name" required />
+                    <input id="name" type="text" placeholder="Last Name" required />
+                </label>
+                <label id="email-label">EMAIL ADDRESS: <input id="email" type="email" placeholder="example@gmail.com" required /></label>
+                <label id="number-label">AGE: <input id="number" type="number" min="13" max="100" placeholder="18" required /></label>
+                <label>GENDER: 
+                    <input type="radio" value="gender" name="gender"> Male
+                    <input type="radio" value="gender" name="gender"> Female
+                    <input type="radio" value="gender" name="gender"> Other
+                    <input type="radio" value="gender" name="gender"> Rather not say
+                </label>
+            </fieldset> 
+            <fieldset>
+                <label id="question-one">How often do you watch movies?
+                    <input type="radio" value="answer-one" name="answer-one"> Everyday
+                    <input type="radio" value="answer-one" name="answer-one"> Twice a week
+                    <input type="radio" value="answer-one" name="answer-one"> Once a week
+                    <input type="radio" value="answer-one" name="answer-one"> Once a month
+                </label>
+                <label id="question-two">What makes you watch a particular movie?
+                    <input type="radio" value="answer-two" name="answer-two"> Recommendations (from friends, ads and others)
+                    <input type="radio" value="answer-two" name="answer-two"> Movie plot
+                    <input type="radio" value="answer-two" name="answer-two"> Movie trailer
+                    <input type="radio" value="answer-two" name="answer-two"> Actors/Actresses
+                    <input type="radio" value="answer-two" name="answer-two"> No reason
+                </label>
+                <label id="question-three">Where do you usually watch films?
+                    <select id="dropdown">
+                        <option value="">choose one</option>
+                        <option value="cinema">Cinema</option>
+                        <option value="online">Online/Download</option>
+                        <option value="tv">TV/DVD</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+                <label>What are your favorite movie genres? (select all that applies)
+                    <input type="checkbox"> Action
+                    <input type="checkbox"> Adventure
+                    <input type="checkbox"> Crime
+                    <input type="checkbox"> Drama
+                    <input type="checkbox"> Fantasy
+                    <input type="checkbox"> Horror
+                    <input type="checkbox"> Mystery
+                    <input type="checkbox"> Romance
+                    <input type="checkbox"> Science Fiction
+                    <input type="checkbox"> Thriller
+                    <input type="text" placeholder="if other, please specify">
+                </label>
+
+                <label>Please let us know if you have any suggestions or comments on how to improve this survey.
+                    Thank you so much for participating!
+                    <textarea id="bio" rows="2" cols="50"></textarea></label>
+            </fieldset>
+            <input id="submit" type="submit">
+        </form>
+    </body>
+</html>
