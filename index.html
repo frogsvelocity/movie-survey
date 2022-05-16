@@ -12,57 +12,57 @@
         <p id="raffle">Your participation in this survey will give you the opportunity to win a movie ticket.</p>
         <form id="survey-form">
             <fieldset>
-                <label id="name-label">NAME:  
+                <label id="name-label">NAME  
                     <input id="name" type="text" placeholder="First Name" required />
                     <input id="name" type="text" placeholder="Last Name" required />
                 </label>
-                <label id="email-label">EMAIL ADDRESS: <input id="email" type="email" placeholder="example@gmail.com" required /></label>
-                <label id="number-label">AGE: <input id="number" type="number" min="13" max="100" placeholder="18" required /></label>
-                <label>GENDER: 
-                    <input type="radio" value="gender" name="gender"> Male
-                    <input type="radio" value="gender" name="gender"> Female
-                    <input type="radio" value="gender" name="gender"> Other
-                    <input type="radio" value="gender" name="gender"> Rather not say
+                <label id="email-label">EMAIL ADDRESS <input id="email" type="email" placeholder="example@gmail.com" required /></label>
+                <label id="number-label">AGE: <input id="number" class="age" type="number" min="13" max="100" placeholder="18" required /></label>
+                <label id="gender">GENDER: <br>
+                    <input type="radio" value="gender" name="gender" class="inline"> Male <br>
+                    <input type="radio" value="gender" name="gender" class="inline"> Female <br>
+                    <input type="radio" value="gender" name="gender" class="inline"> Other <br>
+                    <input type="radio" value="gender" name="gender" class="inline"> Rather not say 
                 </label>
             </fieldset> 
             <fieldset>
-                <label id="question-one">How often do you watch movies?
-                    <input type="radio" value="answer-one" name="answer-one"> Everyday
-                    <input type="radio" value="answer-one" name="answer-one"> Twice a week
-                    <input type="radio" value="answer-one" name="answer-one"> Once a week
-                    <input type="radio" value="answer-one" name="answer-one"> Once a month
+                <label id="question-one">HOW OFTEN DO YOU WATCH MOVIES?<br>
+                    <input type="radio" value="answer-one" name="answer-one" class="inline"> Everyday <br>
+                    <input type="radio" value="answer-one" name="answer-one" class="inline"> Twice a week <br>
+                    <input type="radio" value="answer-one" name="answer-one" class="inline"> Once a week <br>
+                    <input type="radio" value="answer-one" name="answer-one" class="inline"> Once a month <br>
                 </label>
-                <label id="question-two">What makes you watch a particular movie?
-                    <input type="radio" value="answer-two" name="answer-two"> Recommendations (from friends, ads and others)
-                    <input type="radio" value="answer-two" name="answer-two"> Movie plot
-                    <input type="radio" value="answer-two" name="answer-two"> Movie trailer
-                    <input type="radio" value="answer-two" name="answer-two"> Actors/Actresses
-                    <input type="radio" value="answer-two" name="answer-two"> No reason
+                <label id="question-two">WHAT MAKES YOU WATCH A PARTICULAR MOVIE?<br>
+                    <input type="radio" value="answer-two" name="answer-two" class="inline"> Recommendations (from friends, advertisements and others) <br>
+                    <input type="radio" value="answer-two" name="answer-two" class="inline"> Movie plot <br>
+                    <input type="radio" value="answer-two" name="answer-two" class="inline"> Movie trailer <br>
+                    <input type="radio" value="answer-two" name="answer-two" class="inline"> Actors/Actresses <br>
+                    <input type="radio" value="answer-two" name="answer-two" class="inline"> No reason <br>
                 </label>
-                <label id="question-three">Where do you usually watch films?
+                <label id="question-three">WHERE DO YOU USUALLY WATCH FILMS?<br>
                     <select id="dropdown">
                         <option value="">choose one</option>
                         <option value="cinema">Cinema</option>
                         <option value="online">Online/Download</option>
                         <option value="tv">TV/DVD</option>
                         <option value="other">Other</option>
-                    </select>
+                    </select> <br>
                 </label>
-                <label>What are your favorite movie genres? (select all that applies)
-                    <input type="checkbox"> Action
-                    <input type="checkbox"> Adventure
-                    <input type="checkbox"> Crime
-                    <input type="checkbox"> Drama
-                    <input type="checkbox"> Fantasy
-                    <input type="checkbox"> Horror
-                    <input type="checkbox"> Mystery
-                    <input type="checkbox"> Romance
-                    <input type="checkbox"> Science Fiction
-                    <input type="checkbox"> Thriller
-                    <input type="text" placeholder="if other, please specify">
+                <label id="question-four">WHAT ARE YOUR FAVORITE GENRES? (select all that applies) <br>
+                    <input type="checkbox" class="inline"> Action <br>
+                    <input type="checkbox" class="inline"> Adventure <br>
+                    <input type="checkbox" class="inline"> Crime <br>
+                    <input type="checkbox" class="inline"> Drama <br>
+                    <input type="checkbox" class="inline"> Fantasy <br>
+                    <input type="checkbox" class="inline"> Horror <br>
+                    <input type="checkbox" class="inline"> Mystery <br>
+                    <input type="checkbox" class="inline"> Romance <br>
+                    <input type="checkbox" class="inline"> Science Fiction <br>
+                    <input type="checkbox" class="inline"> Thriller <br>
+                    <input type="text" class="inline" placeholder="if other, please specify">
                 </label>
 
-                <label>Please let us know if you have any suggestions or comments on how to improve this survey.
+                <label id="suggestion">Please let us know if you have any suggestions or comments on how to improve this survey.
                     Thank you so much for participating!
                     <textarea id="bio" rows="2" cols="50"></textarea></label>
             </fieldset>

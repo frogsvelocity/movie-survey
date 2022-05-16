@@ -1,2 +1,48 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #231E23;
+    color: #DEEEEA;
+    font-family: Tahoma;
+    font-size: 18px;
+}
 
+h1,
+p {
+    text-align: center;
+}
 
+form {
+    width: 70%;
+    min-width: 400px;
+    max-width: 600px;
+    margin: 0 auto;   
+}
+
+fieldset {
+    border: none;
+    padding: 2rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+label {
+    display: block;
+    margin: 2rem 0;
+}
+
+.inline {
+    width: unset;
+    min-height: 1em;
+}
+
+.age {
+    width: 10%;
+}
