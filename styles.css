@@ -8,12 +8,8 @@ body {
     font-size: 18px;
 }
 
-.header {
-    background-color: #62757C;
-    padding: 12px 0 20px 0;
-    color: #FFFFFF;
+h1, p {
     text-align: center;
-    width: 100%
 }
 
 form {
