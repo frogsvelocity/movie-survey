@@ -7,16 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1 id="title">MOVIE SURVEY FORM</h1>
-        <p id="description">a survey form for cinephiles!</p>
-        <p id="raffle">Your participation in this survey will give you the opportunity to win a movie ticket.</p>
+        <div class="header"><h1 id="title">MOVIE SURVEY FORM</h1>
+            <p id="description">A survey form for cinephiles!<br>
+            Your participation in this survey will give you the opportunity to win a movie ticket.</p>
+        </div>
         <form id="survey-form">
             <fieldset>
                 <label id="name-label">NAME  
-                    <input id="name" type="text" placeholder="First Name" required />
-                    <input id="name" type="text" placeholder="Last Name" required />
+                    <input id="name" type="text" class="name" placeholder="First Name" required />
+                    <input id="name" type="text" class="name" placeholder="Last Name" required />
                 </label>
-                <label id="email-label">EMAIL ADDRESS <input id="email" type="email" placeholder="example@gmail.com" required /></label>
+                <label id="email-label">EMAIL ADDRESS <input id="email" class="email" type="email" placeholder="example@gmail.com" required /></label>
                 <label id="number-label">AGE: <input id="number" class="age" type="number" min="13" max="100" placeholder="18" required /></label>
                 <label id="gender">GENDER: <br>
                     <input type="radio" value="gender" name="gender" class="inline"> Male <br>
@@ -40,8 +41,8 @@
                     <input type="radio" value="answer-two" name="answer-two" class="inline"> No reason <br>
                 </label>
                 <label id="question-three">WHERE DO YOU USUALLY WATCH FILMS?<br>
-                    <select id="dropdown">
-                        <option value="">choose one</option>
+                    <select id="dropdown" required>
+                        <option value="" disabled="" selected="">select option</option>
                         <option value="cinema">Cinema</option>
                         <option value="online">Online/Download</option>
                         <option value="tv">TV/DVD</option>
@@ -49,22 +50,22 @@
                     </select> <br>
                 </label>
                 <label id="question-four">WHAT ARE YOUR FAVORITE GENRES? (select all that applies) <br>
-                    <input type="checkbox" class="inline"> Action <br>
-                    <input type="checkbox" class="inline"> Adventure <br>
-                    <input type="checkbox" class="inline"> Crime <br>
-                    <input type="checkbox" class="inline"> Drama <br>
-                    <input type="checkbox" class="inline"> Fantasy <br>
-                    <input type="checkbox" class="inline"> Horror <br>
-                    <input type="checkbox" class="inline"> Mystery <br>
-                    <input type="checkbox" class="inline"> Romance <br>
-                    <input type="checkbox" class="inline"> Science Fiction <br>
-                    <input type="checkbox" class="inline"> Thriller <br>
+                    <input type="checkbox" value="action" class="inline"> Action <br>
+                    <input type="checkbox" value="adventure"class="inline"> Adventure <br>
+                    <input type="checkbox" value="crime"class="inline"> Crime <br>
+                    <input type="checkbox" value="drama" class="inline"> Drama <br>
+                    <input type="checkbox" value="fantasy" class="inline"> Fantasy <br>
+                    <input type="checkbox" value="horror" class="inline"> Horror <br>
+                    <input type="checkbox" value="mystery" class="inline"> Mystery <br>
+                    <input type="checkbox" value="romance" class="inline"> Romance <br>
+                    <input type="checkbox" value="scific" class="inline"> Science Fiction <br>
+                    <input type="checkbox" value="thriller" class="inline"> Thriller <br>
                     <input type="text" class="inline" placeholder="if other, please specify">
                 </label>
 
-                <label id="suggestion">Please let us know if you have any suggestions or comments on how to improve this survey.
-                    Thank you so much for participating!
-                    <textarea id="bio" rows="2" cols="50"></textarea></label>
+                <label id="suggestion">Please let us know if you have any suggestions or comments<br>on how to improve this survey.
+                    Thank you so much for participating!<br>
+                    <textarea id="bio" rows="5" cols="100"></textarea></label>
             </fieldset>
             <input id="submit" type="submit">
         </form>
