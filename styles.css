@@ -13,6 +13,7 @@ body {
     padding: 12px 0 20px 0;
     color: #FFFFFF;
     text-align: center;
+    width: 100%
 }
 
 form {
@@ -69,7 +70,7 @@ label {
 
 fieldset:not(:last-of-type) {
     border-bottom: 3px solid #62757C;
-    width: 70%;;
+    width: 100%;;
   }
 
 input[type="submit"] {
